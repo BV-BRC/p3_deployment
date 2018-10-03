@@ -11,7 +11,6 @@ all:
 #all: build-libs bin 
 
 build-libs:
-	$(TPAGE) $(TPAGE_BUILD_ARGS) $(TPAGE_ARGS) AppConfig.pm.tt > lib/Bio/KBase/AppService/AppConfig.pm
 
 test:
 	# run each test
