@@ -31,7 +31,7 @@ bin: $(BIN_PERL) $(BIN_SERVICE_PERL)
 
 deploy: deploy-client deploy-service
 deploy-all: deploy-client deploy-service
-deploy-client: compile-typespec build-libs deploy-libs deploy-scripts 
+deploy-client: build-libs deploy-libs deploy-scripts 
 
 deploy-service: deploy-dir deploy-libs deploy-service-scripts 
 
