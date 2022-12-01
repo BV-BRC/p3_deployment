@@ -32,9 +32,9 @@ deploy: deploy-client deploy-service
 deploy-all: deploy-client deploy-service
 deploy-client: build-libs deploy-libs deploy-scripts 
 
-deploy-service: deploy-dir deploy-libs deploy-service-scripts 
+deploy-service: deploy-dir deploy-libs deploy-service-scripts-local 
 
-deploy-service-scripts:
+deploy-service-scripts-local:
 	export KB_TOP=$(TARGET); \
 	export KB_RUNTIME=$(DEPLOY_RUNTIME); \
 	export KB_PERL_PATH=$(TARGET)/lib ; \
